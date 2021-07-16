@@ -1,0 +1,23 @@
+name: TestPlugin
+version: 1.0
+author: Desolstice
+main: me.desolstice.TestPlugin.TestPlugin
+api-version: 1.16
+
+commands:
+  teleport:
+    description: Teleports the player to another player
+    usage: /teleport <targetPlayer>
+    permission: TestPlugin.Teleport
+  home:
+    description: Teleports the player to one of their set homes
+    usage: /home <home name>
+    permission: TestPlugin.GotoHome
+  homes:
+    description: Lists the player homes
+    usage: /homes
+    permission: TestPlugin.GetHomes
+  sethome:
+    description: Sets a home for the player at their current location
+    usage: /sethome <home name>
+    permission: TestPlugin.SetHome
